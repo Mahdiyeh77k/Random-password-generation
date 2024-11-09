@@ -45,8 +45,8 @@ body{
 .container button{
     border: 0;
     outline: 0;
-    background: blue;
-    color: white;
+    background: rgb(194, 194, 248);
+    color: blue;
     font-size: 22px;
     padding: 14px 24px;
     cursor: pointer;
@@ -58,5 +58,9 @@ body{
 }
 .display i{
     font-size: 25px;
-    color: rgba(36, 36, 37, 0.692);
+    color: rgb(187, 187, 251);
+}
+.container button:hover{
+    background: blue;
+    color: rgb(194, 194, 248);
 }
