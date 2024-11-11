@@ -2,7 +2,6 @@ const button=document.getElementById("btnGenerator");
 const passwordbox=document.getElementById("password");
 const copyButton=document.getElementById("copy");
 
-//document.getElementById("random-password-form").addEventListener("submit" , generatepassword);
 
 const generatepassword=()=>{
 
