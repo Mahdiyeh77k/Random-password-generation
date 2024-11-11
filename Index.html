@@ -12,11 +12,26 @@
     <div class="container">
         <div class="container-random-password">
             <h1>Random Password Generation</h1>
-            <div class="display">
-                <input type="text" id="password" placeholder="password">
-                <i class="fa-solid fa-copy" id="copy"></i>
-            </div>
-            <button id="btnGenerator">Create</button>
+            <form name="random-password-form" id="random-password-form" method="post">
+                <div class="tools-elements">
+                    <label for="lengthPassword">Password length:</label>
+                    <select id="lengthPassword" class="form-control" name="lengthPassword">
+                        <option value="">- select -</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                    </select>
+                </div>
+                <div class="display">
+                    <input type="text" id="password" placeholder="password">
+                    <i class="fa-solid fa-copy" id="copy"></i>
+                </div>
+                <button type="button" id="btnGenerator">Create</button>   
+            </form>
         </div>
     </div>
     <script src="./Script.js"></script>

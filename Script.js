@@ -2,22 +2,24 @@ const button=document.getElementById("btnGenerator");
 const passwordbox=document.getElementById("password");
 const copyButton=document.getElementById("copy");
 
+//document.getElementById("random-password-form").addEventListener("submit" , generatepassword);
+
 const generatepassword=()=>{
 
     const chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()_+}{|\/><=-`~[]";
     let password="";
-    const passwordlength=10;
-
+    const passwordlength=document.getElementById("lengthPassword").value;
+    
     for(let i=0; i<passwordlength; i++){
 
         password+=chars.charAt(Math.random()*chars.length);
         console.log(password);
     }
-
     passwordbox.value=password;
+    
 }
 
-button.addEventListener("click" ,generatepassword);
+button.addEventListener("click", generatepassword);
 
 copyButton.addEventListener("click" ,()=>{
 
